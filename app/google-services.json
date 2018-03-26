@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "59972951281",
+    "firebase_url": "https://wikiloka-8ad6b.firebaseio.com",
+    "project_id": "wikiloka-8ad6b",
+    "storage_bucket": "wikiloka-8ad6b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59972951281:android:53a893e94357d202",
+        "android_client_info": {
+          "package_name": "aksamedia.wikiloka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "59972951281-g9i1vn1hl967v1lm4n0sjvouh1ogv2gj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "aksamedia.wikiloka",
+            "certificate_hash": "D0B90FA7C4773C0E0CC0CE51EFE93663F3CDFC7E"
+          }
+        },
+        {
+          "client_id": "59972951281-jdrvrsjiqmskhralsl9g50sd56pm94il.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIhD_6CaZyPloprFzIJLuHr4SbPjDKpBY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "59972951281-jdrvrsjiqmskhralsl9g50sd56pm94il.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

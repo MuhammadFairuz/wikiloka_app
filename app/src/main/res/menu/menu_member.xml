@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu1"
+            android:icon="@drawable/ic_nav_profil"
+            android:title="Ganti Profil" />
+        <item
+            android:id="@+id/nav_menu9"
+            android:icon="@drawable/ic_email_prim_24"
+            android:title="Inbox"
+            />
+        <item
+            android:id="@+id/nav_menu2"
+            android:icon="@drawable/ic_nav_iklan"
+            android:title="List Iklan" />
+        <item
+            android:id="@+id/nav_menu7"
+            android:icon="@drawable/ic_nav_favorite"
+            android:title="Favorite" />
+        <item
+            android:id="@+id/nav_menu3"
+            android:icon="@drawable/ic_nav_website"
+            android:title="Buat Website Gratis" />
+        <item
+            android:id="@+id/nav_menu5"
+            android:icon="@drawable/ic_nav_premium"
+            android:title="Beli Iklan Premium" />
+        <item
+            android:id="@+id/nav_menu4"
+            android:icon="@drawable/ic_nav_upgrade"
+            android:checkable="false"
+            android:title="Beli Poin" />
+        <item
+            android:id="@+id/nav_menu8"
+            android:icon="@drawable/ic_nav_iklan"
+            android:checkable="false"
+            android:title="Upgrade" />
+        <item
+            android:id="@+id/nav_menu6"
+            android:icon="@drawable/ic_nav_logout"
+            android:title="Logout" />
+    </group>
+
+
+</menu>

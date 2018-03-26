@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:weightSum="16">
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:background="@drawable/rounded_rectangle"
+            android:padding="8dp"
+            android:maxLines="4"
+            android:hint="Enter your message"
+            android:layout_weight="2"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/llSend"
+            android:layout_width="match_parent"
+            android:layout_weight="14"
+            android:background="@color/colorPrimary"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="bottom"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/send"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/llMessage">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </ScrollView>
+</RelativeLayout>

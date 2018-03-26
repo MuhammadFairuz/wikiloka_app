@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Activity.activity_daftar">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/relativeLayout6">
+            <aksamedia.wikiloka.Gajelas.tv_sensation
+                android:layout_width="match_parent"
+                android:text="LOGIN AKUN"
+                android:id="@+id/judul"
+                android:textColor="#fff"
+                android:textSize="35dp"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_below="@+id/judul"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="16dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_user_white_128"
+                app:civ_border_color="#fff"
+                app:civ_border_overlay="true"
+                app:civ_border_width="3dp"
+                android:id="@+id/imageView"/>
+            <com.gregacucnik.EditTextView
+                android:id="@+id/tv_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                app:ettIcon="@drawable/ic_user_prim_24"
+                android:layout_below="@+id/imageView"
+                app:ettEmptyTexStyle="normal"
+                android:layout_marginBottom="16dp"
+                app:ettShowHint="false"
+                 app:ettEmptyText="Username" />
+            <com.gregacucnik.EditTextView
+                android:id="@+id/tv_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:layout_below="@+id/tv_user"
+                app:ettIcon="@drawable/ic_password_24"
+                app:ettEmptyTexStyle="normal"
+                android:layout_marginBottom="16dp"
+                android:inputType="textPassword"
+                app:ettShowHint="false"
+                app:ettEmptyText="Password" />
+
+            <LinearLayout
+                android:id="@+id/btn_double"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_below="@+id/tv_pass"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Daftar"
+                    android:id="@+id/btn_daftar"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/btn_border"/>
+
+                <Button
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Masuk"
+                    android:id="@+id/btn_masuk"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/btn_border"/>
+
+            </LinearLayout>
+            <aksamedia.wikiloka.Gajelas.tv_ubuntu
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_forgot"
+                android:text="Lupa password?"
+                android:textSize="20dp"
+                android:layout_below="@+id/btn_double"
+                android:gravity="center_horizontal"
+                android:textColor="#fffff0"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+

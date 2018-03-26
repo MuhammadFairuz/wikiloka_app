@@ -1,0 +1,166 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="false"
+        android:gravity="top"
+        android:id="@+id/linearLayout2">
+        <HorizontalScrollView
+            android:id="@+id/hsv"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="bottom"
+                android:id="@+id/top_menu">
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/slide_layout"
+        android:layout_below="@id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            custom:pager_animation="Accordion"
+            custom:auto_cycle="true"
+            custom:indicator_visibility="visible"
+            custom:pager_animation_span="1100"
+            android:layout_marginBottom="3dp"
+            android:layout_height="match_parent"/>
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_alignBottom="@+id/slider"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/colorPrimaryTransparent" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_height="48dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+           <RelativeLayout
+               android:id="@+id/btn_kota"
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <ImageView
+                   android:background="@drawable/bg_button_near1"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"/>
+               <ImageView
+                   android:src="@drawable/ic_loc1"
+                   android:layout_width="25dp"
+                   android:id="@+id/id5"
+                   android:layout_alignParentLeft="true"
+                   android:scaleType="centerInside"
+                   android:padding="7dp"
+
+                   android:layout_height="match_parent"/>
+               <TextView
+                   android:id="@+id/tv_kota"
+                   android:layout_width="match_parent"
+                   android:text="Seluruh Indonesia"
+                    android:maxLines="1"
+                   android:ellipsize="end"
+                   android:textSize="11dp"
+                   android:layout_toLeftOf="@+id/id3"
+                   android:layout_marginLeft="25dp"
+                   android:layout_centerVertical="true"
+                   android:textColor="#fff"
+                   android:layout_height="wrap_content" />
+               <ImageView
+                   android:src="@drawable/ic_down"
+                   android:layout_width="25dp"
+                   android:id="@+id/id3"
+                   android:layout_toLeftOf="@+id/id4"
+                   android:scaleType="centerInside"
+                   android:padding="7dp"
+                   android:layout_height="match_parent"/>
+               <ImageView
+                   android:layout_alignParentRight="true"
+                   android:background="@color/colorBottom"
+                   android:layout_width="13dp"
+                   android:id="@+id/id4"
+                   android:scaleType="centerInside"
+                   android:padding="7dp"
+                   android:layout_height="match_parent"/>
+           </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_lokasi"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:background="@drawable/bg_button_near2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Lokasi terdekat"
+                    android:textSize="11dp"
+                    android:layout_toRightOf="@+id/id1"
+                    android:layout_centerVertical="true"
+                    android:textColor="#fff"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@drawable/ic_loc"
+                    android:layout_width="25dp"
+                    android:id="@+id/id1"
+                    android:layout_toRightOf="@+id/id2"
+                    android:scaleType="centerInside"
+                    android:padding="7dp"
+                    android:layout_height="match_parent"/>
+                <ImageView
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/colorBottom"
+                    android:layout_width="13dp"
+                    android:id="@+id/id2"
+                    android:scaleType="centerInside"
+                    android:padding="7dp"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/slide_layout"/>
+
+
+</RelativeLayout>

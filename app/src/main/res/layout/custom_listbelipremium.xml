@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#fff"
+    android:id="@+id/bg_list"
+    android:padding="5dp">
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" />
+    <RelativeLayout
+        android:layout_toRightOf="@+id/icon"
+        android:layout_width="match_parent"
+        android:padding="6dp"
+        android:layout_margin="5dp"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/tv_namapremium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorPrimary"
+            android:text="Tes" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:visibility="invisible"
+            android:id="@+id/tv_idpremium"/>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:visibility="invisible"
+            android:id="@+id/tv_statusweb"/>
+    </RelativeLayout>
+
+</RelativeLayout>

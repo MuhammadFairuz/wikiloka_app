@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="aksamedia.wikiloka">
+
+    <uses_permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="aksamedia.wikiloka.Activity.activity_main"
+            android:icon="@mipmap/ic_launcher"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="aksamedia.wikiloka.Activity.activity_login" />
+        <activity android:name="aksamedia.wikiloka.Activity.activity_detail" />
+        <activity android:name="aksamedia.wikiloka.Activity.activity_detailberita" />
+        <activity android:name="aksamedia.wikiloka.Activity.activity_detail_inbox" />
+        <activity android:name="aksamedia.wikiloka.Activity.activity_daftar" />
+        <activity android:name="aksamedia.wikiloka.Activity.activity_akun" />
+        <activity android:name="aksamedia.wikiloka.Activity.activity_gantiprofil" />
+        <activity android:name="aksamedia.wikiloka.Activity.activity_password" />
+        <activity android:name="aksamedia.wikiloka.Activity.activity_notifikasi" />
+        <activity android:name="aksamedia.wikiloka.Activity.activity_iklan" />
+        <activity android:name="aksamedia.wikiloka.Activity.activity_listitem" />
+        <activity android:name="aksamedia.wikiloka.Activity.activity_listfavorit" />
+        <activity android:name="aksamedia.wikiloka.Activity.activity_listiklanku" />
+        <activity android:name="aksamedia.wikiloka.Activity.activity_sub_kategori" />
+        <activity android:name="aksamedia.wikiloka.Activity.activity_splash"/>
+    </application>
+
+</manifest>

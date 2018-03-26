@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ltop2"
+    android:orientation="vertical"
+    android:layout_width="10dp"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:layout_gravity="top">
+
+<aksamedia.wikiloka.Gajelas.tv_oxygen
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="TRAVEL"
+    android:id="@+id/texttop2"
+    android:gravity="center"
+    android:textSize="12dp"
+    android:padding="5dp"
+    android:textColor="#FFFFFF"
+     />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="6dp"
+    android:id="@+id/menutop2"
+    android:background="@color/colorPrimary"
+    android:gravity="bottom"
+    android:layout_marginTop="0dp" />
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#fff"
+    android:padding="5dp">
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" />
+    <RelativeLayout
+        android:layout_toRightOf="@+id/icon"
+        android:layout_width="match_parent"
+        android:padding="6dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="Tes"
+            android:layout_alignParentTop="true" />
+        <TextView
+            android:id="@+id/tv_harga"
+            android:layout_below="@+id/tv_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            android:textColor="@color/colorPrimary"
+            android:text="Tes" />
+        <aksamedia.wikiloka.Gajelas.tv_euphemia
+            android:id="@+id/tv_jumlah"
+            android:layout_below="@+id/tv_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            android:textColor="@color/colorPrimary"
+            android:text="Tes" />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:visibility="invisible"
+            android:id="@+id/id_poin"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_laku"
+            android:layout_marginLeft="5dp"
+            android:textSize="10dp"
+            android:maxLines="1"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:ellipsize="end"
+            android:background="#66bb6a"
+            android:textColor="#fff"
+            android:text="BELI POIN"
+            android:layout_below="@+id/tv_jumlah"
+            android:layout_alignParentRight="true"
+            android:padding="4dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
